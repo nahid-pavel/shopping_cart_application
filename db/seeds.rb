@@ -13,7 +13,7 @@ Product.create!( title: 'This is the title',
 				                 Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast,you should add Ruby to your toolbox.
                                 },
 				 image_url:'pavel.JPG',
-				 price: 22.50
+				 price: 890.30
 				)
 
 end

@@ -1,0 +1,1 @@
+var search_data = {"index":{"searchIndex":["product","latest()"],"longSearchIndex":["product","product::latest()"],"info":[["Product","","Product.html","",""],["latest","Product","Product.html#method-c-latest","()",""]]}}
