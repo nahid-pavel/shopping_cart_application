@@ -1,5 +1,7 @@
 class OrderNotifier < ActionMailer::Base
-  default from: "Pavel cart1@example.com"
+  #encoding: UTF-8
+
+  
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -8,7 +10,7 @@ class OrderNotifier < ActionMailer::Base
   #
   def received(order)
     @order = order
-    mail to: order.email , subject: 'Pragmatic Store Order Confirmation'​
+    mail to: order.email, subject:'Pragmatic Store Order Confirmation'
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -16,9 +18,9 @@ class OrderNotifier < ActionMailer::Base
   #
   #   en.order_notifier.shipped.subject
   #
-  def shipped
+  def shipped(order)
      @order = order
-    mail to: order.email , subject: 'Pragmatic Store Order shipped'​
+     mail  to: order.email, subject:'Pragmatic Store Order shipped'
   end
-  end
+  
 end
